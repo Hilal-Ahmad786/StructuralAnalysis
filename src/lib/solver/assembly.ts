@@ -280,7 +280,7 @@ function assembleMemberTemperatureLoad(
   const section = model.sections.find(s => s.id === member.sectionId);
   const h = section?.h ?? 0;
 
-  const L = getMemberLength(member, model.nodes);
+  const _L = getMemberLength(member, model.nodes);
   const angle = getMemberAngle(member, model.nodes);
 
   // Get temperature changes

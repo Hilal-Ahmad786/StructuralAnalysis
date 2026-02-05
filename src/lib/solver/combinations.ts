@@ -8,8 +8,6 @@
 import type {
   AnalysisResults,
   MemberResult,
-  ReactionResult,
-  NodeDisplacement,
   DiagramPoint,
   CombinedResults,
   EnvelopeResults,
@@ -230,7 +228,7 @@ export function computeEnvelope(combinedResults: CombinedResults[]): EnvelopeRes
     }
 
     // Use the first result as the template for x-coordinates
-    const template = memberResultsAcrossCombinations[0]!;
+    const _template = memberResultsAcrossCombinations[0]!;
 
     return {
       memberId,

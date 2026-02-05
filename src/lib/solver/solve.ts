@@ -20,16 +20,14 @@ import type {
   AnalysisResults,
   AnalysisMetadata,
   CombinedResults,
-  EnvelopeResults,
   CombinationAnalysisResult,
 } from '@/types/analysis';
 
 import { choleskySolve, NotPositiveDefiniteError } from '../math/cholesky';
 import { luSolve, SingularMatrixError } from '../math/lu';
-import { Matrix } from '../math/matrix';
 
 import { buildDOFMap } from './dofMap';
-import { assembleSystem, assembleStiffnessMatrix, assembleGeometricStiffnessMatrix } from './assembly';
+import { assembleSystem, assembleGeometricStiffnessMatrix } from './assembly';
 import { partitionSystem, expandSolution } from './boundary';
 import { checkStability, checkMinimumRestraints, formatInstabilityError } from './stability';
 import { 

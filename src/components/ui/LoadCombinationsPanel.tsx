@@ -421,7 +421,7 @@ export function LoadCombinationsPanel(): React.JSX.Element {
  */
 function CombinationResultsDisplay({
   result,
-  loadCombinations,
+  loadCombinations: _loadCombinations,
 }: {
   result: CombinationAnalysisResult;
   loadCombinations: { id: string; name: string }[];
