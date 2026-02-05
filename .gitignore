@@ -65,3 +65,6 @@ stitch_structura_landing_page/
 
 # Documentation files
 *.docx
+
+# GitHub workflows (requires workflow scope token)
+.github/workflows/
